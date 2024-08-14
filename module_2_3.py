@@ -2,17 +2,16 @@
 
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 
-ctrl = 0
-circle = True
+ctrl = 0                                                                # контролька
 
-while ctrl != len(my_list):
-    if my_list[ctrl] < 0:
+while ctrl != len(my_list):                                             # пока список не кончился
+    if my_list[ctrl] < 0:                                               # если значение списка станет < 0, то
         print("Значение списка стало отрицательным =", my_list[ctrl])
-        break
-    elif my_list[ctrl] == 0:
+        break                                                           # прерываем цикл
+    elif my_list[ctrl] == 0:                                            # если значение списка равно 0,то
         ctrl += 1
-        continue
-    else:
-        print(my_list[ctrl])
+        continue                                                        # начинаем цикл заново
+    else:                                                               # в ином случае
+        print(my_list[ctrl])                                            # просто выводим значение списка пользователю
         ctrl += 1
-print("This is the End!")
+print("This is the End!")                                               # бывает у всего рано или поздно
