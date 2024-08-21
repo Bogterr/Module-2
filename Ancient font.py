@@ -23,7 +23,7 @@ def History():
     for i in book:
         for j in i:
             print(j, end = "", flush = True)
-            #time.sleep(0.03)
+            time.sleep(0.03)
         print()
 
 # ====================================
